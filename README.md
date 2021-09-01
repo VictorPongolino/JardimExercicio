@@ -7,3 +7,9 @@ _Testes:_
 - Escreva um programa que modele esse problema utilizando o paradigma orientado a objetos e Java como linguagem. 
 
 Obs: O funcionamento do programa deve ser demonstrado via método main. É esperado uma sequência de chamadas que demonstra algumas árvores sendo adicionadas no jardim e que no final exiba o número total de plantações.
+
+## Explicações técnicas do Código
+
+Utilizei a implementação declarativa do Java 8 para realizar buscas e iterações nos objetos com maior facilidade. Além disso, utilizei o Pattern de Command para evitar ao máximo a utilização de if's ou switch.
+
+O método __main__ encontra-se em *JardimDemo*
