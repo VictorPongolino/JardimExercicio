@@ -20,7 +20,7 @@ public class Jardim {
     /***
      * Remove uma planta
      * @param planta a instância a ser removida.
-     * @return retorna verdadeiro se
+     * @return verdadeiro se a instância passada foi removida com sucesso.
      */
     public boolean desplantar (Planta planta) {
         return this.plantas.remove(planta);
@@ -29,8 +29,8 @@ public class Jardim {
     /***
      * Remove a primeira planta que encontrar com base em um nome.
      * Não é Case sensitive.
-     * @param nome
-     * @return
+     * @param nome da planta a ser removida do jardim
+     * @return verdadeiro se foi removida com sucesso, se não, false.
      */
     public boolean desplantar (String nome) {
         Optional<Planta> planta = this.plantas.stream()
@@ -47,8 +47,8 @@ public class Jardim {
     /**
      * Filtra e retorna todas as plantas com o nome informado.
      * Ignora case sensitive.
-     * @param nome nome da planta
-     * @return retorna uma Lista de Plantas encontradas.
+     * @param nome da planta
+     * @return Lista de Plantas encontradas.
      */
     public List<Planta> getPlantasByName (String nome) {
         List<Planta> plantas = this.plantas
