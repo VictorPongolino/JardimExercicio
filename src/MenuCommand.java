@@ -9,6 +9,7 @@ abstract class Command {
     public abstract void create();
 }
 
+
 public final class MenuCommand {
     private final Map<String, Command> SUB_MENUS;
     private final Jardim jardim;
@@ -27,10 +28,6 @@ public final class MenuCommand {
                 String nomePlanta = sc.nextLine();
 
                 Planta planta = new Planta(nomePlanta);
-                System.out.println(nomePlanta);
-                System.out.println(planta);
-                System.out.println(jardim);
-
                 jardim.plantar(planta);
             }
         });
