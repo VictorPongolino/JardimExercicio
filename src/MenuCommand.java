@@ -100,6 +100,7 @@ public final class MenuCommand {
         for (Map.Entry<String, Command> it : this.SUB_MENUS.entrySet()) {
             System.out.println(it.getKey() + " - " + it.getValue().DESCRICAO);
         }
+        System.out.println("\n\n");
     }
 
     /***
