@@ -38,7 +38,7 @@ public class Jardim {
                 .findFirst();
 
         if (planta.isPresent()) {
-            desplantar(planta.get());
+            return desplantar(planta.get());
         }
 
         return false;
