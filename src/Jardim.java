@@ -60,10 +60,33 @@ public class Jardim {
     }
 
     /***
+     * Informa todas as plantas de forma não-repetida seguido de seu número total de repetições.
+     */
+    public void printPlantas() {
+        List<Planta> plantasUnique = this.plantas.stream()
+                .distinct()
+                .collect(Collectors.toList());
+
+        if (plantasUnique.size() == 0) {
+            System.out.println("~X~> Não existe nenhuma planta plantada em seu Jardim :( ");
+            return;
+        }
+
+        for (Planta planta : plantasUnique) {
+            String nomePlanta = planta.getNome();
+            int quantidade = getPlantasByName(nomePlanta).size();
+            System.out.println("Você tem " + quantidade + " do tipo " + planta.getNome() + " plantadas !");
+        }
+
+        System.out.println("\n");
+    }
+
+    /***
      * Retorna o numero total sem filtro se plantas plantadas.
      * @return o número total de plantas plantadas.
      */
     public int totalPlantas() {
         return this.plantas.size();
     }
+
 }

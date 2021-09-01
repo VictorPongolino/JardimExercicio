@@ -81,7 +81,15 @@ public final class MenuCommand {
         });
 
         // Comando
-        regCmd.put("4", new Command("Para pegar o número total de plantas") {
+        regCmd.put("4", new Command("Mostra todas as plantas plantadas no jardim") {
+            @Override
+            public void create() {
+                jardim.printPlantas();
+            }
+        });
+
+        // Comando
+        regCmd.put("5", new Command("Para pegar o número total de plantas") {
             @Override
             public void create() {
                 System.out.println("No momento você tem " + jardim.totalPlantas() + " plantas em seu jardim!");
@@ -100,7 +108,7 @@ public final class MenuCommand {
         for (Map.Entry<String, Command> it : this.SUB_MENUS.entrySet()) {
             System.out.println(it.getKey() + " - " + it.getValue().DESCRICAO);
         }
-        System.out.println("\n\n");
+        System.out.println();
     }
 
     /***
