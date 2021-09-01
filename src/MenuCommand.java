@@ -21,8 +21,8 @@ abstract class Command {
 }
 
 /***
- * Um command de Jardim para registrar em forma de menus as operações a serem realizadas.
- * O Objetivo é ENCAPSULAR as operações.
+ * Uma classe que contem um Map contendo a Operação e o seu respectivo Comando.
+ * Encapsula as operações dentro da classe.
  */
 public final class MenuCommand {
     private final Map<String, Command> SUB_MENUS;
@@ -39,7 +39,7 @@ public final class MenuCommand {
          * Operações Encapsuladas em um HashMap;
          * Lembre-se de que não é aceito valores duplicados.
          * */
-        
+
         // Comando
         regCmd.put("1", new Command("Para adicionar uma planta nova") {
             @Override

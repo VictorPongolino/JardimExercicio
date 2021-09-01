@@ -8,8 +8,8 @@ public class JardimDemo {
         Scanner sc = new Scanner(System.in);
         MenuCommand menuCommand = new MenuCommand(new Jardim());
         while (true) {
-            menuCommand.printMenu();
-            menuCommand.callSubmenu(sc.next());
+            menuCommand.printMenu(); //Imprime o menu
+            menuCommand.callSubmenu(sc.next()); // Chama a operação informada pelo usúario.
         }
     }
 }
