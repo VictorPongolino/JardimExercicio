@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -15,6 +16,14 @@ public class Jardim {
      */
     public void plantar(Planta planta) {
         this.plantas.add(planta);
+    }
+
+    /***
+     * Obtem todas a instância de plantas não modificável.
+     * @return um nova lista com todas as plantas, não modifivável.
+     */
+    public List<Planta> getPlantas () {
+        return Collections.unmodifiableList(this.plantas);
     }
 
     /***
