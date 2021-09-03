@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /***
@@ -53,6 +51,11 @@ public class Jardim {
         return false;
     }
 
+    public void removerPlantas() {
+        this.plantas.clear();
+        System.out.println("Todas as plantas de seu Jardim foram removidas !");
+    }
+
     /**
      * Filtra e retorna todas as plantas com o nome informado.
      * Ignora case sensitive.
@@ -89,6 +92,8 @@ public class Jardim {
 
         System.out.println("\n");
     }
+
+
 
     /***
      * Retorna o numero total sem filtro se plantas plantadas.

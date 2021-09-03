@@ -96,6 +96,15 @@ public final class MenuCommand {
             }
         });
 
+        // Comando
+        regCmd.put("6", new Command("Remover todas as plantas") {
+            @Override
+            public void create() {
+                jardim.removerPlantas();
+                System.out.println("Todas as plantas removidas de seu jardim!");
+            }
+        });
+
         // Registra todos os comandos em uma lista final não modificável.
         SUB_MENUS = Collections.unmodifiableMap(regCmd);
     }
