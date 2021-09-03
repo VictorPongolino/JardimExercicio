@@ -12,5 +12,4 @@ Obs: O funcionamento do programa deve ser demonstrado via método main. É esper
 
 Utilizei a implementação declarativa do Java 8 para realizar buscas e iterações nos objetos com maior facilidade. Além disso, utilizei o Pattern de Command para evitar ao máximo a utilização de if's ou switch.
 
-O método __main__ encontra-se em *JardimDemo* 
-Para realizar testes automatizados existe outro main em *JardimTest*
+O método __main__ encontra-se em *JardimDemo* e para testes automatizados existe em *JardimTest*
